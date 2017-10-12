@@ -5,6 +5,9 @@
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
     <StackLayout VerticalOptions="StartAndExpand">
         <maps:Map WidthRequest="320" HeightRequest="200" x:Name="MyMap" IsShowingUser="True" MapType="Hybrid"/>
+        
+        <Picker x:Name="MapPicker" SelectedIndexChanged="MapPicker_OnSelectedIndexChanged"/>
+        
     </StackLayout>
 
 
