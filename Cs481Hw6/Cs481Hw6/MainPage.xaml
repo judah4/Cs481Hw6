@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Cs481Hw6"
-             x:Class="Cs481Hw6.MainPage">
+             x:Class="Cs481Hw6.MainPage"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+    <StackLayout VerticalOptions="StartAndExpand">
+        <maps:Map WidthRequest="320" HeightRequest="200" x:Name="MyMap" IsShowingUser="True" MapType="Hybrid"/>
+    </StackLayout>
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
 
 </ContentPage>

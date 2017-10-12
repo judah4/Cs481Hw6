@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace Cs481Hw6.Droid
 {
-    [Activity(Label = "Cs481Hw6", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "My Mapper", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -20,6 +20,7 @@ namespace Cs481Hw6.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            Xamarin.FormsMaps.Init(this, bundle);
             LoadApplication(new App());
         }
     }
