@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cs481Hw6.MainPage"
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" BackgroundColor="BlanchedAlmond">
     <StackLayout VerticalOptions="StartAndExpand">
-        <maps:Map WidthRequest="320" HeightRequest="200" x:Name="MyMap" IsShowingUser="True" MapType="Hybrid"/>
+        <Picker x:Name="MapPicker" VerticalOptions="End" SelectedIndexChanged="MapPicker_OnSelectedIndexChanged"/>
+        <maps:Map VerticalOptions="FillAndExpand" HeightRequest="1000" HorizontalOptions="FillAndExpand"   x:Name="MyMap" IsShowingUser="True" MapType="Hybrid"/>
         
-        <Picker x:Name="MapPicker" SelectedIndexChanged="MapPicker_OnSelectedIndexChanged"/>
+        
         
     </StackLayout>
 

@@ -15,7 +15,7 @@ namespace Cs481Hw6
         public MainPage()
         {
             InitializeComponent();
-            var mapPos = MapSpan.FromCenterAndRadius(new Position(33.129351, -117.159253), Distance.FromMiles(1));
+            var mapPos = MapSpan.FromCenterAndRadius(new Position(33.125485, -117.252993), Distance.FromMiles(6));
             MyMap.MoveToRegion(mapPos);
 
             Place(new Position(33.129351, -117.159253), PinType.Place, "School", "Csusm");
